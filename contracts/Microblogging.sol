@@ -34,7 +34,11 @@ contract Microblogging {
     mapping(uint256 => address) public voteByOwner;
 
     constructor () {
-
+        ratings[1] = 4;
+        ratings[2] = 1;
+        ratings[3] = 1;
+        ratings[4] = 4;
+        ratings[5] = 9;
     }
 
     function createPost(address author, string memory caption) public {
